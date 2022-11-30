@@ -1,0 +1,96 @@
+/*Starten av body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Slutten av body*/
+
+/*Starten av navigasjonsbar*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  background-color: #d9d9d9;
+}
+
+#nav-header {
+  font-weight: 100;
+  margin-left: 3%;
+  font-size: 30px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  gap: 10%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  list-style: none;
+  transition: 1s;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+/*Slutten av navigasjons-bar*/
+
+/*Starten av Footer med Sosiale medier ikoner */
+footer {
+  width: 100%;
+  height: 8vh;
+  position: relative;
+  bottom: 0;
+  background-color: #d9d9d9;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+  gap: 2%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15%;
+  gap: 2%;
+}
+
+#social-icon {
+  width: 25%;
+  height: 25%;
+}
+
+#footer-text {
+  font-size: 20px;
+}
+/*Slutten av Footer med Sosiale medier ikoner */
