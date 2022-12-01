@@ -10,8 +10,7 @@ body {
 
 /* header image */
 header {
-  height: 60vh;
-  transition: 1s;
+  height: 67vh;
 }
 
 #header-image {
@@ -66,12 +65,13 @@ nav {
 }
 
 #bottom-header {
-  position: absolute;
-  bottom: 45%;
+  position: relative;
+  z-index: 1;
+  top: -40%;
+  left: 5%;
   color: white;
   font-size: 35px;
   font-weight: 100;
-  margin-left: 3%;
 }
 
 nav a {
@@ -154,28 +154,4 @@ footer {
 #footer-text {
   text-align: center;
   font-size: 20px;
-}
-
-/* Animaasjon av en edderkopp som beveger seg over siden */
-
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(50%);
-    left: 50%;
-  }
-  100% {
-    transform: translateX(0%);
-    left: -30%;
-  }
-}
-
-#animation-box {
-  position: absolute;
-  z-index: 5;
-  left: 80%;
-  width: 200px;
-  animation: slide 3s ease-in-out forwards infinite;
 }
